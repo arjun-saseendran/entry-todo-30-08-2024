@@ -10,22 +10,22 @@ function App() {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((data) => {setProducts(data)
-    
-  });
+      .then((data) => {
+        setProducts(data);
+      });
   }, []);
 
   return (
     <>
       <Header />
       <Container>
-      <Row className="pt-5">
-        {products.map((product, index) => (
-          <MainSection key={index} product={product} />
-        ))}
-      </Row>
+        <Row className="pt-5">
+          {products.map((product, index) => (
+            <MainSection key={index} product={product} />
+          ))}
+        </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 }
