@@ -6,7 +6,7 @@ function MainSection({ product }) {
     console.log(product);
     
   return (
-    <Col col={12} sm={6} md={4} lg={3}>
+    <Col sm={6} md={4} lg={3}>
       <Card className="card overfolw-hidden mb-4 p-2"
                   style={{ width: "18rem", height: "30rem"}} >
         <Card.Img variant="top" src={product.image} style={{ height: "200px" }} className='object-fit-contain' />
