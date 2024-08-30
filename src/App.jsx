@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import { Container, Row } from "react-bootstrap";
 import MainSection from "./components/main/MainSection";
 import { useState, useEffect } from "react";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -24,6 +25,7 @@ function App() {
         ))}
       </Row>
       </Container>
+      <Footer/>
     </>
   );
 }
